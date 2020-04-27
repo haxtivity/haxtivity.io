@@ -1,5 +1,5 @@
 ---
-title: Post with Header Image
+title: Host header injection lead to full account takeover on private website
 tags: TeXt
 layout: article
 ---
