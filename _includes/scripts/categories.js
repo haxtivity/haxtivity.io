@@ -86,7 +86,6 @@
             result[i] || (result[i] = {});
             result[i][j] = true;
           } else {
-            alert(tag);
             var tags = $articles.eq(j).data('categories').split(',');
             for (k = 0; k < tags.length; k++) {
               if (tags[k] === tag) {
@@ -129,7 +128,6 @@
     var query = queryString(), _tag = query.tag;
     init(); tagSelect(_tag);
     $tags.on('click', 'button', function() {
-      prompt($(this).data('encode'));
       tagSelect($(this).data('encode'), $(this));
     });
 
