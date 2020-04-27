@@ -86,8 +86,7 @@
             result[i] || (result[i] = {});
             result[i][j] = true;
           } else {
-            var tags = $articles.eq(j).data('categories').split(',');
-            alert(tags);
+            var tags = $articles.eq(j).data('tags').split(',');
             for (k = 0; k < tags.length; k++) {
               if (tags[k] === tag) {
                 result[i] || (result[i] = {});
@@ -119,7 +118,7 @@
         if (_tag === '' || typeof _tag !== 'string') {
           setUrlQuery();
         } else {
-          setUrlQuery('?category=' + _tag);
+          setUrlQuery('?company=' + _tag);
         }
       } else {
         buttonFocus(searchButtonsByTag(tag));
