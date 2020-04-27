@@ -86,7 +86,7 @@
             result[i] || (result[i] = {});
             result[i][j] = true;
           } else {
-            alert($articles.eq(j));
+            alert($articles.eq(j).values);
             var tags = $articles.eq(j).data('categories').split(',');
             for (k = 0; k < tags.length; k++) {
               if (tags[k] === tag) {
