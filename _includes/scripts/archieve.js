@@ -118,7 +118,7 @@
         if (_tag === '' || typeof _tag !== 'string') {
           setUrlQuery();
         } else {
-          setUrlQuery('?tag=' + _tag);
+          setUrlQuery('?company=' + _tag);
         }
       } else {
         buttonFocus(searchButtonsByTag(tag));
