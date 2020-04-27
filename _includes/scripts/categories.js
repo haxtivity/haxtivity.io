@@ -86,7 +86,7 @@
             result[i] || (result[i] = {});
             result[i][j] = true;
           } else {
-            var tags = $articles.eq(j).data('tags').split(',');
+            var tags = $articles.eq(j).data('categories').split(',');
             for (k = 0; k < tags.length; k++) {
               if (tags[k] === tag) {
                 result[i] || (result[i] = {});
@@ -118,7 +118,7 @@
         if (_tag === '' || typeof _tag !== 'string') {
           setUrlQuery();
         } else {
-          setUrlQuery('?tag=' + _tag);
+          setUrlQuery('?category=' + _tag);
         }
       } else {
         buttonFocus(searchButtonsByTag(tag));
