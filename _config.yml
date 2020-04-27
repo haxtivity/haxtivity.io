@@ -207,10 +207,10 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: false
-      license: false
+      sharing: true
+      license: true
       aside:
-        toc: false
+        toc: true
       show_edit_on_github: false
       show_subscribe: false
       pageview: true
