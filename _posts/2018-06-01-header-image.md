@@ -1,6 +1,6 @@
 ---
 title: Host header injection lead to full account takeover on private website
-tags: TeXt
+tags: Race Condition, XSS
 company: coba
 ---
 
